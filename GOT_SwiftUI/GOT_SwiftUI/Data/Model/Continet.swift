@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Continent: Codable {
+struct Continent: Codable, Identifiable {
     
-    let id: String
+    let id: Int
     let name: String?
 }

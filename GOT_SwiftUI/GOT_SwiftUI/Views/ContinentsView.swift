@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct ContinentsView: View {
+  @StateObject var viewModel = ContinentsViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(viewModel.continents) {
+                data in
+                Text(data.name ?? "_")
+            }
+            .navigationTitle("Continentes")
+        }
+        .onAppear {
+            viewModel.getContinents()
+        }
     }
+        
 }
+
 
 #Preview {
     ContinentsView()

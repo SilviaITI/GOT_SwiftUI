@@ -10,17 +10,17 @@ import SwiftUI
 struct CharactersView: View {
     @StateObject var viewModel = CharactersViewModel()
     var body: some View {
-        Group{
+    
             List {
                 ForEach(viewModel.characters) {
                     data in
                     NavigationLink {
-                        DetailView()
+                        DetailView(character: data)
                     } label : {
                         CellCharacterView(character: data)
                     }
                 }
-            }
+            
         
             }
         }

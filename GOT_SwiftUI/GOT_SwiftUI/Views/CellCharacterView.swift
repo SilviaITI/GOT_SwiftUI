@@ -14,12 +14,16 @@ struct CellCharacterView: View {
         ZStack{
             AsyncImage(url: URL(string: character.imageUrl ?? "cersei"), content: { image in
                 image
+                    .resizable()
+                    .scaledToFit()
             }, placeholder: {
                 Image(systemName: "photo")
             })
-            .scaledToFill()
             .opacity(0.6)
-            .presentationCornerRadius(12.0)
+            .cornerRadius(18)
+            .shadow(radius: 12)
+            .frame(width: 300, height: 200)
+            .padding()
             
             VStack{
                 Text(character.firstName ?? "Personaje")
