@@ -16,6 +16,9 @@
 		61B392032B25B7E1002EB65F /* GOT_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B392022B25B7E1002EB65F /* GOT_SwiftUITests.swift */; };
 		61B3920D2B25B7E1002EB65F /* GOT_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3920C2B25B7E1002EB65F /* GOT_SwiftUIUITests.swift */; };
 		61B3920F2B25B7E1002EB65F /* GOT_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3920E2B25B7E1002EB65F /* GOT_SwiftUIUITestsLaunchTests.swift */; };
+		61B392232B25C14C002EB65F /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B392222B25C14C002EB65F /* NetworkModel.swift */; };
+		61B392252B25C4E4002EB65F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B392242B25C4E4002EB65F /* Character.swift */; };
+		61B392272B25C4F2002EB65F /* Continet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B392262B25C4F2002EB65F /* Continet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		61B392082B25B7E1002EB65F /* GOT_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOT_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B3920C2B25B7E1002EB65F /* GOT_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOT_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		61B3920E2B25B7E1002EB65F /* GOT_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOT_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61B392222B25C14C002EB65F /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		61B392242B25C4E4002EB65F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		61B392262B25C4F2002EB65F /* Continet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 		61B391EB2B25B7DF002EB65F /* GOT_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				61B3921E2B25BA56002EB65F /* ViewModel */,
+				61B3921D2B25BA4E002EB65F /* Views */,
+				61B392212B25C126002EB65F /* NetworkModel */,
+				61B3921B2B25BA3E002EB65F /* Data */,
 				61B391EC2B25B7DF002EB65F /* GOT_SwiftUIApp.swift */,
 				61B391EE2B25B7DF002EB65F /* ContentView.swift */,
 				61B391F02B25B7E0002EB65F /* Assets.xcassets */,
@@ -131,6 +141,45 @@
 				61B3920E2B25B7E1002EB65F /* GOT_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = GOT_SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		61B3921B2B25BA3E002EB65F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				61B3921C2B25BA44002EB65F /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		61B3921C2B25BA44002EB65F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61B392242B25C4E4002EB65F /* Character.swift */,
+				61B392262B25C4F2002EB65F /* Continet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61B3921D2B25BA4E002EB65F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61B3921E2B25BA56002EB65F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		61B392212B25C126002EB65F /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				61B392222B25C14C002EB65F /* NetworkModel.swift */,
+			);
+			path = NetworkModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +314,10 @@
 			files = (
 				61B391F92B25B7E0002EB65F /* GOT_SwiftUI.xcdatamodeld in Sources */,
 				61B391F62B25B7E0002EB65F /* Persistence.swift in Sources */,
+				61B392272B25C4F2002EB65F /* Continet.swift in Sources */,
 				61B391EF2B25B7DF002EB65F /* ContentView.swift in Sources */,
+				61B392252B25C4E4002EB65F /* Character.swift in Sources */,
+				61B392232B25C14C002EB65F /* NetworkModel.swift in Sources */,
 				61B391ED2B25B7DF002EB65F /* GOT_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
